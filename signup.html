@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>eBooks - Sign up</title>
+  <link rel="stylesheet" href="signupstyles.css" type="text/css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active" style="padding: 9px 16px;"><img src="img/whitelogo.png" alt="White Logo" style="width: 97px; height: 25px;"></i></a>
+        <a href="signin.html" title="Sign in" style="padding: 14px 16px; float: right;"><i class="fa fa-fw fa-user"></i>Sign In</a>
+        <a href="javascript:void(0);" class="icon" onclick="showMenuIcon()">
+          <i class="fa fa-bars"></i></a>
+  </div>
+  
+  <main>
+    <form id="signForm" action="post.html">
+      <!-- Creates progress bar -->
+        <div class="progressbar" id="progressbar">
+            <div class="bar" id="bar1"></div>
+            <div class="bar" id="bar2"></div>
+            <div class="bar" id="bar3"></div>
+            <div class="bar" id="bar4"></div>
+        </div>
+        
+    <!-- One "tab" for each step in the form: -->
+
+    <div class="tab">
+      <h1>Create an account.</h1>
+      <h2>Login Info</h2>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="e.g. example@gmail.com" oninput="this.className = ''">
+        <div class="messages"></div>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="" oninput="this.className = ''">
+        <div class="messages"></div>
+      </div>
+      <div class="form-group">
+        <label for="repassword">Re-enter Password</label>
+        <input type="password" id="repassword" name="repassword" placeholder="" oninput="this.className = ''">
+        <div class="messages"></div>
+      </div>
+    </div>
+
+    <div class="tab">
+      <h2>Personal Info</h2>
+      <div class="form-group">
+        <label for="firstname">First name</label>
+        <input type="text" id="firstname" name="firstname" placeholder="e.g. John" oninput="this.className = ''">
+        <div class="messages"></div>
+      </div> 
+      <div class="form-group">
+        <label for="lastname">Last name</label>
+        <input type="text" id="lastname" name="lastname" placeholder="e.g. Smith" oninput="this.className = ''">
+        <div class="messages"></div>
+      </div>
+      <div class="form-group">
+        <label for="birthday">Birthday</label>
+        <input type="date" id="birthday" name="birthday" min="1900-01-01" max="2019-11-30" oninput="this.className = ''">
+        <div class="messages">
+      </div>
+      <br><br><br><br>
+      <div class="form-group">
+          <label class="pref" style="font-size: 14px;">I agree to the terms and conditions.
+          <input type="checkbox">
+          <span class="checkboxes"></span>
+          </label>
+      </div>
+    </div>
+      </div>
+    </div>
+
+    <div class="tab">
+      <h1>Your account has been created!</h1>
+      <h1>Enter payment details.</h1>
+        <div class="form-group">
+        <label for="cardname">Name on Card</label>
+        <input type="text" id="cardname" name="cardname" placeholder="e.g. John Smith" oninput="this.className = ''">
+        <div class="messages"></div>
+      </div>
+      <div class="form-group">
+        <label for="cardnumber">Card Number</label>
+        <input type="text" id="cardnumber" name="cardnumber" placeholder="" oninput="this.className = ''">
+        <div class="messages"></div>
+      </div> 
+
+        <label for="expirydate">Expiry Date</label>
+        <input type="number" id="month" name="month" style="width: 10%;" placeholder="MM" min="1" max="12" oninput="this.className = ''"> / 
+        <input type="number" id="year" name="year" style="width: 10%" placeholder="YY" min="19" oninput="this.className = ''">
+      
+      <div class="form-group">
+        <label for="securitycode">Security Code/CVV</label>
+        <input type="text" id="securitycode" name="securitycode" style="width: 10%;" oninput="this.className = ''">
+        <div class="messages"></div>
+      </div>
+
+        <h2 style="margin-top: 60px;">Billing Address</h2>
+        <label for="address">Address</label>
+        <input type="text" id="address1" name="address1" placeholder="e.g. " oninput="this.className = ''">
+
+    </div>
+
+    
+    <div class="tab">
+      <h1>Help us personalize your account and tune your recommendations.</h1>
+      <h2>What are you favourite genres?</h2>
+      <label class="pref">Arts & Photography
+      <input type="checkbox">
+      <span class="checkboxes"></span>
+      </label>
+      <label class="pref">Biographies & Memoirs
+      <input type="checkbox" checked="checked">
+      <span class="checkboxes"></span>
+      </label>
+      <label class="pref">Business & Money
+      <input type="checkbox">
+      <span class="checkboxes"></span>
+      </label>
+      <label class="pref">Technology
+        <input type="checkbox">
+        <span class="checkboxes"></span>
+      </label>
+      <label class="pref">Food & Cuisine
+          <input type="checkbox">
+          <span class="checkboxes"></span>
+      </label>
+      <label class="pref">Education
+        <input type="checkbox">
+        <span class="checkboxes"></span>
+      </label>
+      <label class="pref">Health & Fitness
+        <input type="checkbox">
+        <span class="checkboxes"></span>
+      </label>
+      <label class="pref">History
+        <input type="checkbox">
+        <span class="checkboxes"></span>
+      </label>
+      <label class="pref">Health & Fitness
+        <input type="checkbox">
+        <span class="checkboxes"></span>
+      </label>
+      <label class="pref">Mystery, Thriller & Suspense
+        <input type="checkbox">
+        <span class="checkboxes"></span>
+      </label>
+      <label class="pref">Romance
+        <input type="checkbox">
+        <span class="checkboxes"></span>
+      </label>
+      <label class="pref">Science Fiction & Fantasy
+        <input type="checkbox">
+        <span class="checkboxes"></span>
+      </label>
+      <label class="pref">Self-Help
+        <input type="checkbox">
+        <span class="checkboxes"></span>
+      </label>  
+      <label class="pref">Sports & Outdoors
+        <input type="checkbox">
+        <span class="checkboxes"></span>
+      </label>
+      <label class="pref">Teen & Young Adult
+        <input type="checkbox">
+        <span class="checkboxes"></span>
+      </label>
+      <label class="pref">Travel
+        <input type="checkbox">
+        <span class="checkboxes"></span>
+      </label>
+
+    </div>
+    
+    <button type="button" id="nextBtn" onclick="nextPrev(1), move()">Next</button>
+    <button type="button" id="prevBtn" onclick="nextPrev(-1), back()">Previous</button>
+    <button type="button" id="save" onClick="location.href='index2.html'">Save</button>
+    
+    </form>
+    
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+  <script type="text/javascript" src="signupscript.js"></script>
+
+</body>
+</html>

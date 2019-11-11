@@ -5,13 +5,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="style.css" rel="stylesheet">
+  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <title>eBooks</title>
 </head>
 
 <body>
-  <p>Hello.</p>
-  <a href="page.html" title="Page 1">Visit Page 1</a>
-  <img src="img/blacklogo.png" alt="Logo"> 
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" class="active" style="padding: 9px 16px;"><img src="img/whitelogo.png" alt="White Logo" style="width: 97px; height: 25px;"></i></a>
+    <a class="search-container">
+      <form action="/action_page.php">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </a>
+    <a href="signup.html" title="Sign up" style="padding: 14px 16px; float: right;"><i class="fa fa-fw fa-user"></i>Sign Up</a>
+    <a href="javascript:void(0);" class="icon" onclick="showMenuIcon()">
+      <i class="fa fa-bars"></i></a>
+  </div>
+
+  <div class="container">
+    <button class="btn" type="button" id="signup" onClick="location.href='signup.html'">Sign up now</button>
+    <img src="img/booksadv.jpg" alt="Books">
+  </div>
+  
   <script src="scripts.js"></script>
   
 </body>

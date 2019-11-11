@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>eBooks - Sign in</title>
+  <link rel="stylesheet" href="signupstyles.css" type="text/css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active" style="padding: 9px 16px;"><img src="img/whitelogo.png" alt="White Logo" style="width: 97px; height: 25px;"></i></a>
+        <a href="signup.html" title="Sign up" style="padding: 14px 16px; float: right;"><i class="fa fa-fw fa-user"></i>Sign Up</a>
+        <a href="javascript:void(0);" class="icon" onclick="showMenuIcon()">
+          <i class="fa fa-bars"></i></a>
+  </div>
+  
+
+
+  <main>
+    <form id="signForm" action="post.html" style="padding: 100px; height: 700px;">
+        
+
+      <h1>Create an account.</h1>
+      <h2>Login Info</h2>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email">
+
+      <p></p>
+      <label for="password">Password</label>
+      
+      <input type="password" id="password" name="password">
+      <br><br><br>
+      <button type="button" id="login" onClick="location.href='index2.html'">Log in</button>
+
+   </main>
+   <script type="text/javascript" src="signupscript.js"></script>
+  
+  </body>
+</html>

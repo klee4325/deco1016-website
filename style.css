@@ -1,4 +1,126 @@
-img {
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f1f5f8;
+}
+
+
+/* Add a background color to the top navigation */  
+.topnav {
+    overflow: hidden;
+    background-color: lightseagreen;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    color: seagreen;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+    background-color: lightseagreen;
+    color: white;
+    float: center;
+}
+
+  
+.topnav input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    margin-left: 14px;
+    font-size: 17px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.topnav .search-container {
+    background-color: lightseagreen;
+}
+
+.topnav .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 14px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    border-radius: 0px 5px 5px 0px;
+}
+  
+.topnav .search-container button:hover {
+    background: #ccc;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+    padding: 14px 16px;
+}
+
+
+.container {
+    position: relative;
+    width: 100%;
+  }
+  
+  /* Make the image responsive */
+  .container img {
     width: 100%;
     height: auto;
+    font-size: 34px;
+  }
+  
+  /* Style the button and place it in the middle of the container/image */
+  .container .btn {
+    position: absolute;
+    top: 45%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    background-color: lightseagreen;
+    border: none;
+    font-size: 1em;
+    padding: 10px;
+    border-radius: 5px; 
+  }
+  
+  .container .btn:hover {
+    background-color: seagreen;
+  }
+
+  
+  
+
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a{
+      float: none;
+      display: block;
+      text-align: left;
+    }
 }
