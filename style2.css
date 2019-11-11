@@ -24,8 +24,8 @@ body {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  /* background-color: #ddd; */
-  color: seagreen;
+  background-color: #ddd;
+  color: black;
 }
 
 /* Add an active class to highlight the current page */
