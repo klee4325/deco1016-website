@@ -62,7 +62,7 @@ body {
 }
 
 .topnav .search-container button:hover {
-  background: #ccc;
+  background: lightseagreen;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
