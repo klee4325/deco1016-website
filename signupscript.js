@@ -23,7 +23,7 @@ function showTab(n) {
     document.getElementById("signForm").style.height = "1400px";
     document.getElementById("prevBtn").style.display = "none";
   } else if (n == 3) {
-    document.getElementById("signForm").style.height = "1600px";
+    document.getElementById("signForm").style.height = "1700px";
     document.getElementById("nextBtn").style.display = "none";
     document.getElementById("save").style.display = "inline";
   } else if (n == 1) {
